@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+
+        }
+        .cards{
+            display: flex;
+            
+            justify-content: center;
+            margin-top:80px;
+        }
+        .card{
+            background-color: white;
+            
+            width: 300px;
+            aspect-ratio: 5/7;
+            position: absolute;
+            
+        }
+        .bigcard{
+            width: 300px;
+            border-radius: 10px;
+        }
+        .littlecard{
+            width: 100px;
+            border-radius: 5px;
+            transform: translateY(150px);
+           
+        }
+        .bigcard:nth-child(2){
+            background-image:url(https://images.pexels.com/photos/17811/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600) !important;
+            background-size: cover;
+            
+            transform: translate(-10%) rotate(-1deg);
+        }
+        .bigcard:nth-child(4){
+            background-image:url(https://images.pexels.com/photos/162318/cheetahs-cubs-two-together-162318.jpeg?auto=compress&cs=tinysrgb&w=600);
+            background-size: cover;
+            transform:rotate(2deg);
+        }
+        .bigcard:nth-child(6){
+            background-image:url(https://images.pexels.com/photos/1059823/pexels-photo-1059823.jpeg?auto=compress&cs=tinysrgb&w=600);
+            background-size: cover;
+           transform: translate(-6%) rotate(-3deg);
+       }
+       .bigcard:nth-child(8){
+        background-image:url(https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+           transform: translate(10%,3%) rotate(5deg);
+       }
+       .littlecard:nth-child(1){
+        background-image: url(https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-size: cover;
+       }
+       .littlecard:nth-child(3){
+        background-image: url(https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-size: cover;
+       }
+       .littlecard:nth-child(5){
+        background-image: url(https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-size: cover;
+       }
+       .littlecard:nth-child(7){
+        background-image: url(https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-size: cover;
+       }
+       
+       
+       .cards:hover > .bigcard:nth-child(2){
+         transform: translate(-75%,16%) rotate(-24deg);
+         transition: transform 300ms;
+       }
+       .cards:hover > .bigcard:nth-child(4){
+         transform: translate(-25%,8%) rotate(-8deg);
+         transition: transform 300ms;
+       }
+       .cards:hover > .bigcard:nth-child(6){
+         transform: translate(25%,8%) rotate(8deg);
+         transition: transform 300ms;
+       }
+       .cards:hover > .bigcard:nth-child(8){
+         transform: translate(75%,16%) rotate(24deg);
+         transition: transform 300ms;
+       }
+       .cards:hover > .littlecard:nth-child(1){
+         transform: translate(300%,-15%) rotate(-15deg);
+         transition: transform 500ms;
+         
+       }
+       .cards:hover > .littlecard:nth-child(3){
+         transform: translate(350%,250%) rotate(15deg);
+         transition: transform 500ms;
+       }
+       .cards:hover > .littlecard:nth-child(5){
+         transform: translate(-300%,-15%) rotate(15deg);
+         transition: transform 500ms;
+       }
+       .cards:hover > .littlecard:nth-child(7){
+         transform: translate(-320%,250%) rotate(-15deg);
+         transition: transform 500ms;
+       }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="littlecard card"></div>
+        <div class="bigcard card"></div>
+        <div class="littlecard card"></div>
+        <div class="bigcard card"></div>
+        <div class="littlecard card"></div>
+        <div class="bigcard card"></div>
+        <div class="littlecard card"></div>  
+        <div class="bigcard card"></div>   
+       
+              
+    </div>
+</body>
+</html>
