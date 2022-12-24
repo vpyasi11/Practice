@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            display:flex;
+            justify-content: space-between;
+            background-color: red;
+            margin: 10px;
+            padding: 10px;
+        
+        }
+        .box{
+            width: 50vw;
+            height: 50vh;
+            background-color: aqua;
+        }
+       
+        /* general sibling selector */
+        #container:hover ~ #sibling3{ 
+            background-color: aqua;
+        }
+        /* Adjacent sibling selector */
+        #container:hover + #sibling1+ #sibling2{
+            background-color: aqua;
+        }
+
+        /* Pseudo class targeting */
+        div:nth-child(3){
+            background-color: black;
+        }
+    </style>
+</head>
+<body><div class="box">
+        <div id="container"></div>
+        <div id="sibling1"></div>
+        <div id="sibling2"></div>
+        <div id="sibling3"></div></div>
+</body>
+</html>
