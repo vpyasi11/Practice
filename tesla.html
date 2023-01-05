@@ -9,103 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <style>
-        body{
-            font-family: 'M PLUS 1', sans-serif;
-        }
-        *{
-            /* border: 1px solid black; */
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        header{
-           display: flex;
-           justify-content: space-between;
-           padding: 15px;
-           position: fixed;
-           width: 100%;
-           z-index: 1;
-          
-        }
-        header nav a{
-            padding: 15px;
-            
-        }
-        svg{
-            height: 20px;
-            width: 150px; 
-            padding-left: 35px;
-            flex: 1;
-            
-        }
-        a{
-            color: black;
-            text-decoration: none;
-        }
-        @media (max-width:1100px){
-            .desktop{
-                display: none;
-            }
-        }
-        section{
-            height: 100vh;
-            background-size:cover;
-            background-position: center center;
-            position: sticky;
-            top: 0px;
-            
-            
-        }
-        section .content{
-            text-align: center;
-            height: 100vh;
-            padding-top: 15vh;
-            padding-bottom: 15vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        section h1{
-            font-size: 40px;
-        }
-        .content a{
-            text-decoration: underline;
-            flex: 1;
-        }
-        .content .button a{
-            
-            background-color: lightgray;
-            color: black;
-            border-radius: 5px;
-            padding: 10px 80px;
-            text-decoration: none;
-            font-weight: 500;
-            opacity: 0.85;
-            font-size: 15px;
-            margin: 10px;
-        }
-        .content .button{
-            height: 50px;
-        }
-        .content .button a:first-child{
-            background-color: black;
-            color: white;
-        }
-        
-       @media (max-width:640px){
-        .content .button a{
-        display: block;
-        max-width:90%;
-        margin: 20px auto;
-        }
-       }
-       aside{
-        
-       }
-        
-        
-    </style>
+    <link href="tesla.css" rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -125,29 +30,31 @@
         <nav class="right">
             <a href="" class="desktop">Shop</a>
             <a href="" class="desktop">Account</a>
-            <a href="">Menu</a>
+            <a href="" id="menu">Menu</a>
+            <aside>
+                <button class="close">x</button>
+                <a href="">Existing Inventory</a>
+                <a href="">Used Inventory</a>
+                <a href="">Trade-In</a>
+                <a href="">Demo Drive</a>
+                <a href="">Insurance</a>
+                <a href="">Cybertruck</a>
+                <a href="">Roadster</a>
+                <a href="">Semi</a>
+                <a href="">Charging</a>
+                <a href="">Powerwall</a>
+                <a href="">Commercial Energy</a>
+                <a href="">Utilities</a>
+                <a href="">Find Us</a>
+                <a href="">Support</a>
+                <a href="">Investor Relations</a>
+                <a href=""><i class="fa fa-globe"></i> United States <br><span>English</span></a>
+            </aside>
         </nav>
 
     </header>
-    <aside>
-        <button class="close">X</button>
-        <a href="">Existing Inventory</a>
-        <a href="">Used Inventory</a>
-        <a href="">Trade-In</a>
-        <a href="">Demo Drive</a>
-        <a href="">Insurance</a>
-        <a href="">Cybertruck</a>
-        <a href="">Roadster</a>
-        <a href="">Semi</a>
-        <a href="">Charging</a>
-        <a href="">Powerwall</a>
-        <a href="">Commercial Energy</a>
-        <a href="">Utilities</a>
-        <a href="">Find Us</a>
-        <a href="">Support</a>
-        <a href="">Investor Relations</a>
-        <a href=""><i class="fa fa-globe"></i>United States English</a>
-    </aside>
+    
+   
     <div class="container">
 
     <section style="background-image:url('https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70')">
@@ -225,8 +132,25 @@
                 <a href="">Shop Now</a>
                 
             </div>
+            <footer>
+                
+                <a>Tesla © 2023</a>
+                <a>Privacy & Legal</a>
+                <a>Vehicle Recalls</a>
+                <a href="">Contact</a>
+                <a href="">Careers</a>
+                <a href="">News</a>
+                <a href="">Engage</a>
+                <a href="">Locations</a>
+            
+        </footer>
+           
         </div>
+       
     </section>
+
+
+   
 
 </div>
 </body>
