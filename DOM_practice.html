@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td{
+            margin: auto;
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex:1;
+            background-color: greenyellow;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+    <table id="table1">
+        <tr>
+            <td>abc</td>
+            <td>def</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>456</td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="insert_row()">Add Row</button>
+</div>
+    <script>
+        function insert_row(){
+            var row = parseInt(prompt("Enter Row position: "))
+            var row_data = prompt("Enter Row data: ")
+            var row_data1 = prompt("Enter row Data 2: ")
+            var x = document.getElementById("table1").insertRow(row);
+            var y = x.insertCell(0);
+            var z = x.insertCell(1)
+            // var z = x.insertCell(1);
+            y.innerHTML = row_data;
+            z.innerHTML = row_data1;
+            // z.innerHTML = row_data;
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
